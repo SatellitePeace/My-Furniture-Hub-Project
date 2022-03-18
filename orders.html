@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Furniture-Hub-payment</title>
+      <!-- favicon -->
+      <link
+        rel="shortcut icon"
+        href="./image/icons8-furniture-64.png"
+        type="image/x-icon"
+      />
+      <!-- end of favicon -->
+      <link rel="stylesheet" href="furniture.css" />
+      <script src="https://use.fontawesome.com/92e6912369.js"></script>
+    </head>
+    <body>
+      <div class="forms-section-order">
+        <!-- section icon -->
+        <div class="iconic">
+          <p>make <i class="fa fa-dollar"></i> payment</p>
+        </div>
+        <!-- end of section icon -->
+        <!-- forms -->
+        <form class="order-form">
+          <div class="row">
+            <ul>
+              <li class="ok">
+                <label for="name" class="yes">name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="firstname no"
+                  placeholder="firstname lastname"
+                />
+              </li>
+              <!-- end of first name -->
+              <li class="ok">
+                <label for="card" class="card yes"
+                  ><i class="fa fa-credit-card"> card</i></label
+                >
+                <select name="card" id="cards" class="cards">
+                  <option value=""><i class="fa fa-card"></i></option>
+                  <option value="size" class="size">credit card</option>
+                  <option value="" class="size">debit card</option>
+                  <option value="" class="size">visa</option>
+                  <option value="" class="size">verve</option>
+                  <option value="" class="size">mastercard</option>
+                </select>
+              </li>
+              <!-- end of select option -->
+              <li class="ok">
+                <label for="number" class="yes">card digits</label>
+                <input type="number" name="number" id="" class="no" />
+              </li>
+              <!-- end of card digits -->
+
+              <!-- end of password -->
+              <li class="ok">
+                <label for="adderess" class="yes">address</label>
+                <input type="text" class="no" />
+              </li>
+              <!-- end of address-->
+              <li class="ok">
+                <label for="coupon" class="yes">coupon</label>
+                <input type="text" class="no coupon-class" />
+              </li>
+            </ul>
+            <!-- end of coupon -->
+          </div>
+          <!-- =====second row===== -->
+          <div class="row">
+            <ul>
+              <li class="ok">
+                <label for="date" class="yes">expiry date</label>
+                <input type="date" name="date" id="date" class="no" />
+              </li>
+              <!-- end of expiry date -->
+              <li class="ok">
+                <label for="password" class="yes">password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="no"
+                />
+              </li>
+              <li class="ok">
+                <label for="phone" class="yes">phone</label>
+                <input type="number" name="phone" id="phone" class="no" />
+              </li>
+            </ul>
+          </div>
+          <input type="submit" value="order" class="btn generic-btn" />
+        </form>
+        <article class="art">
+          <a href="index.html"><i class="fa fa-arrow-left"></i></a>
+        </article>
+      </div>
+    </body>
+  </html>
+</html>
