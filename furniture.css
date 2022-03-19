@@ -293,7 +293,7 @@ products section
 }
 .product-img {
   border: 2px solid #ff9505;
-  transition: 3s;
+  /* transition: 3s; */
   grid-template-rows: auto 1fr auto;
 }
 .image {
@@ -312,7 +312,6 @@ products section
   color: #f6fedb;
   font-size: 1.5rem;
   margin-left: 1rem;
-
   text-transform: capitalize;
 }
 .footer a {
@@ -322,39 +321,35 @@ products section
   transition: 1s;
   margin-right: 1rem;
 }
+.footer a:hover{
+  background:#91972a;
+  text-align:center;
+  border:2px solid whitesmoke;
+}
 @media screen and (min-width: 700px) {
   .product-center {
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     grid-template-rows: auto 1fr auto;
   }
-  .product-img {
-    grid-template-rows: auto 1fr auto;
-  }
-  .footer a:hover {
-    color: #f6fedb;
-    border: 3px solid #91972a;
+  /* .footer a:hover {
+    background:fdfdec
+    border:2px solid #f6fedb;
 
     font-weight: bold;
-    text-transform: uppercase;
-  }
+  } */
   .general-btn a {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 992px) {
-  .product-center {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .product-img:hover {
-    transform: scale(1.1);
-  }
+/* @media screen and (min-width: 992px) {
   .footer a:hover {
     text-transform: capitalize;
     font-weight: normal;
-    border: 3px solid #91972a;
+
+    transition:1s;
   }
-}
+} */
 /* =============
 SERVICES CSS
 ============= */
@@ -381,7 +376,6 @@ SERVICES CSS
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-
   color: #fdfdec;
   word-spacing: 0.5rem;
 }
@@ -389,9 +383,13 @@ SERVICES CSS
 .service-info p {
   color: #fdfdec;
 }
-.service-btn a:hover {
-  background: #91972a;
-  color: #fdfdec;
+.service-btn a {
+  color: #91972a;
+  background: #fdfdec;
+}
+.service-btn a:hover{
+  background:#91972a;
+  color:#fdfdec
 }
 @media screen and (min-width: 700px) {
   .services-center {
